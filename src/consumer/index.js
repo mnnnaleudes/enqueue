@@ -10,15 +10,11 @@ amqp.connect('amqp://localhost', function(error0, connection) {
         if (error1) {
             throw error1;
         }
-        var queue = 'hellobaby';
-        var msg = 'Hello world';
+        var queue = 'Produtos';
 
         channel.assertQueue(queue, {
             durable: false
         });
-
-        channel.sendToQueue(queue, Buffer.from(msg));
-        console.log(" [x] Sent %s", msg);
 
         console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
 

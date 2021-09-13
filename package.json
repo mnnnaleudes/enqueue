@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "robs <mnnnaleudes@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.8.0"
-  }
+  },
+  "repository": "https://github.com/mnnnaleudes/enqueue.git"
 }
